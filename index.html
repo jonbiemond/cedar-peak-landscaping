@@ -8,24 +8,29 @@
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans antialiased">
 
-    <header id="contact-header" class="bg-green-800 text-white p-4 text-center shadow-md relative z-20">
-        <p class="text-sm md:text-base font-semibold">
-            Call us today: <a href="tel:5551234567" class="underline hover:text-green-200">(555) 123-4567</a> | 
-            Email: <a href="mailto:info@cedarpeak.com" class="underline hover:text-green-200">info@cedarpeak.com</a>
+<header id="contact-header" class="bg-green-800 text-white p-4 shadow-md relative z-20 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+            <img src="./images/logo.png" 
+                 alt="Cedar Peak Logo" 
+                 class="w-20 h-20 object-cover border-2 border-white">
+        </div>
+
+        <p class="text-sm md:text-base font-semibold text-center md:text-right">
+            Call us today: <a href="tel:5551234567" class="underline text-brown-800 hover:text-brown-200">(555) 123-4567</a> <br class="md:hidden">
+            <span class="hidden md:inline">|</span> Email: <a href="mailto:info@cedarpeak.com" class="underline text-brown-800 hover:text-brown-200">info@cedarpeak.com</a>
         </p>
     </header>
 
-    <section class="relative w-full h-80 md:h-screen-60 overflow-hidden bg-gray-900">
-        <div class="absolute top-4 left-4 z-20 bg-white/90 p-3 rounded-md shadow-lg flex items-center gap-2">
-            <svg class="w-8 h-8 text-green-700" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
-            </svg>
-            <h1 class="font-bold text-xl text-green-900 tracking-tight">Cedar Peak</h1>
-        </div>
+    <section class="relative w-full h-80 md:h-screen-60 overflow-hidden bg-gray-900 flex items-center justify-center">
+        <img src="./images/manicured_roundabout.jpeg"
+             alt="Beautifully landscaped yard"
+             class="absolute inset-0 w-full h-full object-cover opacity-60 z-10">
 
-        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1920&q=80" 
-             alt="Beautifully landscaped yard" 
-             class="absolute inset-0 w-full h-full object-cover opacity-70 z-10">
+        <div class="relative z-20 text-center px-6">
+            <h1 class="text-white text-12xl md:text-12xl font-bold tracking-tight mb-4">
+                Cedar Peak
+            </h1>
+        </div>
     </section>
 
     <section class="py-16 px-6 text-center max-w-3xl mx-auto">
@@ -42,22 +47,22 @@
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Our Services</h2>
             <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-lg text-gray-700">
-                <li class="flex items-center gap-3 bg-gray-50 p-4 rounded-lg shadow-sm">
+                <li class="flex items-center gap-3 bg-green-50 p-4 rounded-lg shadow-sm">
                     <span class="text-green-600 text-2xl">✓</span> Mowing
                 </li>
-                <li class="flex items-center gap-3 bg-gray-50 p-4 rounded-lg shadow-sm">
+                <li class="flex items-center gap-3 bg-green-50 p-4 rounded-lg shadow-sm">
                     <span class="text-green-600 text-2xl">✓</span> Year-round Lawn Care
                 </li>
-                <li class="flex items-center gap-3 bg-gray-50 p-4 rounded-lg shadow-sm">
+                <li class="flex items-center gap-3 bg-green-50 p-4 rounded-lg shadow-sm">
                     <span class="text-green-600 text-2xl">✓</span> Weeding
                 </li>
-                <li class="flex items-center gap-3 bg-gray-50 p-4 rounded-lg shadow-sm">
+                <li class="flex items-center gap-3 bg-green-50 p-4 rounded-lg shadow-sm">
                     <span class="text-green-600 text-2xl">✓</span> Installing Barkmulch
                 </li>
-                <li class="flex items-center gap-3 bg-gray-50 p-4 rounded-lg shadow-sm">
+                <li class="flex items-center gap-3 bg-green-50 p-4 rounded-lg shadow-sm">
                     <span class="text-green-600 text-2xl">✓</span> Shrub & Tree Trimming
                 </li>
-                <li class="flex items-center gap-3 bg-gray-50 p-4 rounded-lg shadow-sm">
+                <li class="flex items-center gap-3 bg-green-50 p-4 rounded-lg shadow-sm">
                     <span class="text-green-600 text-2xl">✓</span> Pressure Washing
                 </li>
             </ul>
@@ -67,10 +72,10 @@
     <section class="py-16 px-6 max-w-5xl mx-auto">
         <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Our Recent Work</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <img src="https://images.unsplash.com/photo-1558904541-efa843a96f09?auto=format&fit=crop&w=600&q=80" alt="Freshly mowed lawn" class="w-full h-64 object-cover rounded-lg shadow-md">
-            <img src="https://images.unsplash.com/photo-1622383563227-04401ab4e5ea?auto=format&fit=crop&w=600&q=80" alt="Barkmulch installation" class="w-full h-64 object-cover rounded-lg shadow-md">
-            <img src="https://images.unsplash.com/photo-1599900554561-12501a5eb23a?auto=format&fit=crop&w=600&q=80" alt="Trimmed shrubs" class="w-full h-64 object-cover rounded-lg shadow-md">
-            <img src="https://images.unsplash.com/photo-1505577058444-a3afe90ee8be?auto=format&fit=crop&w=600&q=80" alt="Pressure washed driveway" class="w-full h-64 object-cover rounded-lg shadow-md">
+            <img src="./images/frontyard_mowed.jpeg" alt="Freshly mowed lawn" class="w-full h-80 object-cover">
+            <img src="./images/frontyard_barkmulch.jpeg" alt="Barkmulch installation" class="w-full h-80 object-cover">
+            <img src="./images/driveway_blossoms.jpeg" alt="Pressure washed driveway" class="w-full h-80 object-cover">
+            <img src="./images/mowing_pov.jpeg" alt="Mowing the yard" class="w-full h-80 object-cover">
         </div>
     </section>
 
@@ -78,15 +83,15 @@
         <div class="max-w-5xl mx-auto">
             <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">What Our Clients Say</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-green-600">
+                <div class="bg-white p-6 border-t-4 border-green-600">
                     <p class="text-gray-600 italic mb-4">"Cedar Peak transformed our overgrown backyard into a beautiful oasis. Their mulching and trimming work is top-tier!"</p>
                     <p class="font-bold text-gray-900">- Sarah Jenkins</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-green-600">
+                <div class="bg-white p-6 border-t-4 border-green-600">
                     <p class="text-gray-600 italic mb-4">"Reliable, honest, and hardworking. I've used them for year-round lawn care and my grass has never looked greener."</p>
                     <p class="font-bold text-gray-900">- Mark D.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-green-600">
+                <div class="bg-white p-6 border-t-4 border-green-600">
                     <p class="text-gray-600 italic mb-4">"The pressure washing made my driveway look brand new again. Highly recommend the Cedar Peak team."</p>
                     <p class="font-bold text-gray-900">- The Robertson Family</p>
                 </div>
